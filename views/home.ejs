@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<%- include("partials/head", {title: "Home"}) %> 
+
+<body>
+    <header class="header-style">
+
+        <div class="top-header">
+
+            <div class="contenedor-logo">
+                <img class="logo-main" src="/images/logo-mercado-liebre.svg" alt="Logo MercadoLiebre">
+            </div>
+            
+            <div class="form" action="#" method="GET">
+                <div class="input">Buscar productos y más</div>
+                <div class="submit"><i class="fa fa-search"></i></div>
+            </div>
+            <div class="Comprar-cuota">
+                <p><i class="fas fa-hand-holding-usd"></i> Compra en cuotas y sin tarjeta de crédito</p>
+            </div>
+        </div>
+        <nav class="navbar">
+            <div class="navul">
+
+                <ul >
+                    <li><a href="">Ofertas</a></li>
+                    <li><a href="">Tienda Oficial</a> </li>
+                    <li><a href="">Vender</a></li>
+                    <li><a href="/transformaciones">Ayuda</a></li>
+                </ul>
+            </div>
+            <div class="navul">
+                <ul class="navul">
+                    <li><a href="/register">Creá tu cuenta <i class="fas fa-id-card"></i></a></li>
+                    <li><a href="/login">Ingresá <i class="fas fa-sign-in-alt"></i></a></li>
+                    <li><a href="">Mis compras <i class="fas fa-shopping-basket"></i></a></li>
+                    
+                </ul>
+            </div>
+        </nav>
+        <div class="burger-menu"><i class="fas fa-bars"></i></div>
+        <img class="banner-main" src="/images/img-home-banner.jpg" alt="">     
+        
+    </header>
+    
+    <main class="main-section">
+        <section class="last-visit">
+            <h3>Basado en tu última visita</h3>
+            <div class="products">
+
+               <% for( let i=0; i < listProducts.length; i++) { %>
+               <%- include("partials/product", {product:listProducts[i]}) %> 
+               <%}%>
+            </div>  
+        </section>
+    </main>
+    <footer></footer>
+</body>
+
+</html>

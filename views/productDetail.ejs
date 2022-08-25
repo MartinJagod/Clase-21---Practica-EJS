@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<%- include("partials/head", {title: "Home"}) %> 
+
+<body>
+    <header class="header-style">
+
+        <div class="top-header">
+
+            <div class="contenedor-logo">
+                <img class="logo-main" src="/images/logo-mercado-liebre.svg" alt="Logo MercadoLiebre">
+            </div>
+            
+            <div class="form" action="#" method="GET">
+                <div class="input">Buscar productos y más</div>
+                <div class="submit"><i class="fa fa-search"></i></div>
+            </div>
+            <div class="Comprar-cuota">
+                <p><i class="fas fa-hand-holding-usd"></i> Compra en cuotas y sin tarjeta de crédito</p>
+            </div>
+        </div>
+
+    </header>
+    
+    <main class="main-section">
+        <section class="last-visit">
+            <h3>Basado en tu última visita</h3>
+            <a href="/products/">Volver al listado</a>
+            <div class="products">
+               <%- include("partials/product", {product:product}) %> 
+            
+            </div>  
+        </section>
+    </main>
+    <footer></footer>
+</body>
+
+</html>

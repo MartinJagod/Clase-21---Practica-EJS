@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap');
+
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css");
+
+*{
+    margin: 0px;
+    padding: 0px;    
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'roboto';
+    font-size: 12px;
+    background-color: rgb(209, 207, 207);
+}
+
+.title-section {
+    font-size: 24px;
+}
+
+.price {
+
+    font-size: 18px;
+}
+
+.box-price {
+    width: 200px;
+}
+
+.discount {
+
+    font-size: 16px;
+}
+.top-header{
+    position: fixed;
+    top: 0;
+}
+
+.description {
+
+    font-size: 16px;
+}
+
+.logo-main {
+    width: 150px;
+}
+
+.main-section{
+    width: 90%;
+    margin: auto;
+    margin-top: 250px;
+    
+}
+.product {
+    margin-bottom: 10px ;
+    background-color: white;
+}
+.product_img {
+    width: 80%;
+}
+.main-article{
+    border-top: solid 1px #ebebeb;
+    padding: 15px;
+}
+
+.header-style {
+    background-color: #EAC926;
+    
+}
+
+header .form{
+    display: flex;
+    align-items: center;
+    padding: 2px;
+    font-size: 11px;
+}
+header .form .input{
+    background-color: #FFF;
+    border: 1px solid #000;
+    outline: none;
+    color: #666;
+    padding: 2px;
+}
+
+header div.contenedor-logo,
+header .form{
+    width: 50%;
+}
+header div.logo{
+    padding: 10px;
+}
+div.top-header{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5%;
+}
+header .form{
+    display: flex;
+    align-items: center;
+    padding: 2px;
+    font-size: 11px;
+}
+
+.banner-main{
+    width: 100%;
+    display: block;
+}
+.products{
+    display: flex;
+    flex-wrap: wrap;
+    }
+
+.burger-menu {
+    width: 35px;
+    height: 33px;
+    background-color: #1259c3;
+    font-size: 25px;
+    color: white;
+    margin: auto;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.navbar{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.navul {
+    width: 150px;
+}
+
+.product{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+
+
+}
+
+header .Comprar-cuota{
+    width: 100%;}
+
+    .transformaciones-body{
+        width: 500px;
+        height: 500px;
+        margin: auto;
+        margin-top: 10%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content:center;
+        align-content: center;
+    }
+
+    .one, .two, .three, .four, .five {
+        width: 100px;
+        height: 100px;
+        margin: 10px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+      
+
+    }
+.one {
+    background-color: pink;
+    transition: transform 1s;
+
+}
+.two {
+    background-color: yellow;
+    transition: transform 0.5s;
+
+}
+.three {
+    background-color: orange;
+    transition: transform 0.5s;
+
+}
+
+.four {
+    background-color: green;
+    transition: all 0.5s;
+
+}
+
+.one:hover {
+    transform: rotate(-45deg);
+    transform-origin: left;
+
+}
+
+.two:hover {
+    transform: translate(-50px, -50px);
+
+}
+.three:hover {
+    transform: skew(-25deg);
+}
+
+.four:hover{
+    transform: scale(-1.2);
+}
+
+
+
+
+@media (min-width:361px) {
+    
+    header div.contenedor-logo,
+header .form ,
+header .Comprar-cuota{
+    width: 30%;
+}
+    .description{
+        display: block;
+    }
+    .navbar{
+        display: block;
+    }
+    .burger-menu {
+        display: none;
+    }
+    .product {
+        width: 50%;
+        box-shadow: 0 0 5px rgba(0, 0 , 0, 0.5);
+    }
+}
+
+@media (min-width:769px) {
+
+    .burger-menu {
+
+        color: olive;
+        width: 60px;
+        margin: auto;
+
+    }
+    .product{
+        width: 25%;
+    }
+}
