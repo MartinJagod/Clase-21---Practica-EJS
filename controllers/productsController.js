@@ -51,6 +51,7 @@ const productsController ={
     detail:(req, res)=>{
         const product = listProducts.find(oneProduct => oneProduct.id == req.params.id)
         res.render("productDetail", {product: product});
+        
     }
 }
 
